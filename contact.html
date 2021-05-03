@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <section class="sub-header">
+        <nav>
+          <a href="index.html"><img src="images/logo.png" alt="" /></a>
+          <div class="nav-link" id="navlinks">
+            <i class="fa fa-times" onclick="hidemenu()"></i>
+            <ul>
+              <li><a href="inex.html">HOME</a></li>
+              <li><a href="about.html">ABOUTt</a></li>
+              <li><a href="course.html">COURSES</a></li>
+              <li><a href="blog.html">BLOGS</a></li>
+              <li><a href="">CONTACT</a></li>
+            </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>CONTACT US</h1>
+      </section>
+    </header>
+
+    <main>
+      <!-- Contact us-->
+      <section class="location">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6997.653179021152!2d77.05331897545032!3d28.724727979525817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d065f98a1b42d%3A0x60c8dddd0a90cac3!2z4KSw4KS-4KSc4KWA4KS1IOCkqOCkl-CksCwg4KS24KWH4KSwIOCkuOCkv-CkguCkmCDgpI_gpILgpJXgpY3gpLLgpYfgpLUsIOCkuOClh-CkleCljeCkn-CksCAzOSwg4KSw4KWL4KS54KS_4KSj4KWALCDgpKbgpL_gpLLgpY3gpLLgpYA!5e0!3m2!1shi!2sin!4v1618224801211!5m2!1shi!2sin"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </section>
+      <section class="contact-us">
+        <div class="row">
+          <div class="contact-col">
+            <div>
+              <i class="fa fa-home"></i>
+              <span>
+                <h5>XYZ road, ABC bealding</h5>
+                <p>New delhi, Delhi, Bharat</p>
+              </span>
+            </div>
+            <div>
+              <i class="fa fa-phone"></i>
+              <span>
+                <h5>+91 1234567890</h5>
+                <p>Monday to Saturday, 10AM to 6PM</p>
+              </span>
+            </div>
+            <div>
+              <i class="fa fa-envelope-o"></i>
+              <span>
+                <h5>vivekkumargndit70@gmail.com</h5>
+                <p>Email us your query</p>
+              </span>
+            </div>
+          </div>
+          <div class="contact-col">
+            <form action="">
+              <input type="text " placeholder="Enter name" required />
+              <input type="email " placeholder="Enter email" required />
+              <input type="text " placeholder="Enter your subject" required />
+              <textarea rows="8" placeholder="Message" required></textarea>
+              <button type="button" class="hero-btn red-btn">
+                Send message
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer-->
+
+    <footer>
+      <section class="footer">
+        <h4>About us</h4>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat a,
+          quis soluta fugit suscipit <br />iste assumenda non odio tempora!
+          Corporis fuga odio ad voluptatem dolor.
+        </p>
+        <div class="icons">
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Vivek Kumar.</p>
+      </section>
+    </footer>
+
+    <!-- javascript for toggle menu-->
+    <script>
+      var navlinks = document.getElementById("navlinks");
+      function showMenu() {
+        navlinks.style.right = "0px";
+      }
+
+      function hidemenu() {
+        navlinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

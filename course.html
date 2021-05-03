@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" alt="" /></a>
+        <div class="nav-link" id="navlinks">
+          <i class="fa fa-times" onclick="hidemenu()"></i>
+          <ul>
+            <li><a href="inex.html">HOME</a></li>
+            <li><a href="about.html">ABOUTt</a></li>
+            <li><a href="">cOURSES</a></li>
+            <li><a href="blog.html">BLOGS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>OUR COURSES</h1>
+    </header>
+
+    <main>
+    </section>
+    <!-- Our Courses-->
+    <section class="course">
+      <h1>Courses we offer</h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam,
+        tempora.
+      </p>
+      <div class="row">
+        <div class="course-col">
+          <h3>Intermediate</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+            officiis voluptas sint soluta architecto voluptatem doloribus,
+            dignissimos quaerat culpa maxime?
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>Deegree</h3>
+          <p>
+            Btech, B.A(Hons), B.A(Program), Bsc(hons), Bsc(program), BBA,
+            B.A(LLB), B.arch, B.plan, MBBS, B.nursing, BE, B.Journalism.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+            officiis voluptas sint soluta architecto voluptatem doloribus,
+            dignissimos quaerat culpa maxime?
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>Post Graduation</h3>
+          <p>
+            Mtech, M.A(Hons), M.A(Program), Msc(hons), Msc(program), MBA,
+            M.A(LLM), M.arch, M.plan, MS(surgery), M.nursing, ME, M.Journalism
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+            officiis voluptas sint soluta architecto voluptatem doloribus,
+            dignissimos quaerat culpa maxime?
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Our Facilities-->
+    <section class="facilities">
+      <h1>Our Facilities</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam
+        recusandae molestias assumenda maiores nam. Maiores.
+      </p>
+      <div class="row">
+        <div class="facilities-col">
+          <img src="images/library.png" />
+          <h3>World class library</h3>
+          <p>
+            Our college has the biggest library in the world. Our library has
+            the more then <strong> 5, 00, 000 books. </strong>
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum,
+            laborum.
+          </p>
+        </div>
+        <div class="facilities-col">
+          <img src="images/basketball.png" />
+          <h3>Largest playground</h3>
+          <p>
+            Our university has the world class sports facilities. Our
+            university contains <strong>4 Crickest </strong> grounds,
+            <strong> 9 Tanis</strong> grounds, and
+            <strong>4 Swimming pools</strong> etc.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum,
+            laborum.
+          </p>
+        </div>
+        <div class="facilities-col">
+          <img src="images/cafeteria.png" />
+          <h3>Tasty and helthy food</h3>
+          <p>
+            Our university has world class canteen which serves healthy and
+            tasty food of all around the world such as
+            <strong>Indian</strong>, <strong>Chines</strong>, and
+            <strong>Maxicon</strong> etc.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum,
+            laborum.
+          </p>
+        </div>
+      </div>
+    </section>
+</main>
+
+    <!-- Footer-->
+
+    <footer>
+      <section class="footer">
+        <h4>About us</h4>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat a,
+          quis soluta fugit suscipit <br />iste assumenda non odio tempora!
+          Corporis fuga odio ad voluptatem dolor.
+        </p>
+        <div class="icons">
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Vivek Kumar.</p>
+      </section>
+    </footer>
+
+    <!-- javascript for toggle menu-->
+    <script>
+      var navlinks = document.getElementById("navlinks");
+      function showMenu() {
+        navlinks.style.right = "0px";
+      }
+
+      function hidemenu() {
+        navlinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
